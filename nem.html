@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      height: 60vh;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+    button {
+      padding: 8px 12px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body class="font-bold h-auto bg-[rgba(0,0,0,0.5)] text-white flex justify-center gap-[40px] max-w-[1440px] w-full px-5 ">
+<div class="flex flex-col gap-4 bg-[rgba(72,255,0,0.27)] p-4 rounded-md">
+    <h2>Inactive Users</h2>
+    <ul id="inactiveUsersList">
+    </ul>
+    <button class="bg-green-500 py-1 px-2 rounded-md text-white font-semibold" onclick="activateUsers()">Activate Selected</button>
+  
+</div>
+<div class="flex flex-col gap-4 bg-[rgba(255,0,0,0.27)] p-4 rounded-md">
+
+    <h2>Active Users</h2>
+    <ul id="activeUsersList">
+    </ul>
+    <button class="bg-red-500 py-1 px-2 rounded-md text-white font-semibold" onclick="deactivateUsers()">Deactivate Selected</button>
+</div>
+  <script src="./nem.js"></script>
+</body>
+</html>
