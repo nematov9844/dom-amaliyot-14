@@ -1,4 +1,3 @@
-// Inactive va Active userlar ma'lumotlari
 let inactiveUsers = [
     { id: 1, name: 'User 1', selected: false },
     { id: 2, name: 'User 2', selected: false },
